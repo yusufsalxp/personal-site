@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import styled from 'styled-components'
-
+import type { NextPage } from 'next';
+import styled from 'styled-components';
+import TwitterIcon from '../assets/twitter-icon.svg';
 
 const Button = styled.div`
 background-color: aqua;
@@ -11,7 +11,7 @@ background-color: aqua;
 
 const Home: NextPage = () => {
   return (
-    <Button>fdfasd</Button>
+    <Button><TwitterIcon /></Button>
   )
 }
 
