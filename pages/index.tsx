@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
-import LogoText from '../components/Logo';
+import SocialMediaLinks from '../components/SocialMediaLinks';
 
 const Home: NextPage = () => {
   return (
-    <LogoText />
+    <SocialMediaLinks />
   )
 }
 
