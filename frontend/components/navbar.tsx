@@ -5,7 +5,7 @@ const MenuItems = [
   { text: "About", href: "/" },
   { text: "Resume", href: "/resume" },
   { text: "Portfolio", href: "/portfolio" },
-  { text: "Contact", href: "/contact" },
+  //{ text: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {

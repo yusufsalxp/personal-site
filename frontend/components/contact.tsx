@@ -1,16 +1,50 @@
+import Image from "next/image";
 import { useState } from "react";
+import {
+  IoArrowDown,
+  IoCalendarOutline,
+  IoLocationOutline,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoMailOutline,
+  IoPhonePortraitOutline,
+} from "react-icons/io5";
+import avatar from "../public/avatar.png";
 
 export default function Contact() {
   const [showing, setShowing] = useState(false);
+  /* const [[width]] = useState([window.innerWidth]);
+
+  let avatarWidth = 80;
+
+  if (width > 1250) {
+    avatarWidth = 150;
+  } else if (width > 580) {
+    avatarWidth = 120;
+  } */
+
   return (
     <aside className={`sidebar ${showing ? "active" : ""}`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src={"/my-avatar.png"} alt="Richard hanrick" width="80" />
+          <Image
+            src={avatar}
+            alt="Yusuf ŞAL"
+            id="avatar-img"
+            width={80}
+            height={80}
+            style={{
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+            }}
+          />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">
+          <h1 className="name" title="Yusuf ŞAL">
             Yusuf ŞAL
           </h1>
 
@@ -25,8 +59,7 @@ export default function Contact() {
           }}
         >
           <span>Show Contacts</span>
-
-          {/*  <ion-icon name="chevron-down"></ion-icon> */}
+          <IoArrowDown />
         </button>
       </div>
 
@@ -36,54 +69,53 @@ export default function Contact() {
         <ul className="contacts-list">
           <li className="contact-item">
             <div className="icon-box">
-              {/* 
-              <ion-icon name="mail-outline"></ion-icon> */}
+              <IoMailOutline />
             </div>
 
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">
-                richard@example.com
+              <a href="mailto:contact@yusufsal.com" className="contact-link">
+                contact@yusufsal.com
               </a>
             </div>
           </li>
 
           <li className="contact-item">
             <div className="icon-box">
-              {/* <ion-icon name="phone-portrait-outline"></ion-icon> */}
+              <IoPhonePortraitOutline />
             </div>
 
             <div className="contact-info">
               <p className="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" className="contact-link">
-                +1 (213) 352-2795
+              <a href="tel:+905075971176" className="contact-link">
+                +90 (507) 597-1176
               </a>
             </div>
           </li>
 
           <li className="contact-item">
             <div className="icon-box">
-              {/* <ion-icon name="calendar-outline"></ion-icon> */}
+              <IoCalendarOutline />
             </div>
 
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
 
-              <time dateTime="1982-06-23">June 23, 1982</time>
+              <time dateTime="1982-06-23">February 16, 1996</time>
             </div>
           </li>
 
           <li className="contact-item">
             <div className="icon-box">
-              {/* <ion-icon name="location-outline"></ion-icon> */}
+              <IoLocationOutline />
             </div>
 
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Ankara, Turkey</address>
             </div>
           </li>
         </ul>
@@ -93,19 +125,19 @@ export default function Contact() {
         <ul className="social-list">
           <li className="social-item">
             <a href="#" className="social-link">
-              {/* <ion-icon name="logo-facebook"></ion-icon> */}
+              <IoLogoFacebook />
             </a>
           </li>
 
           <li className="social-item">
             <a href="#" className="social-link">
-              {/* <ion-icon name="logo-twitter"></ion-icon> */}
+              <IoLogoTwitter />
             </a>
           </li>
 
           <li className="social-item">
             <a href="#" className="social-link">
-              {/* <ion-icon name="logo-instagram"></ion-icon> */}
+              <IoLogoInstagram />
             </a>
           </li>
         </ul>
