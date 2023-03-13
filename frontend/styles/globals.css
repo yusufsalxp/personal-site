@@ -1545,8 +1545,9 @@ textarea.form-input::-webkit-resizer {
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img {
+  .testimonial-avatar-image {
     width: 80px;
+    height: 80px;
   }
 
   .testimonials-item-title {
@@ -1933,6 +1934,9 @@ textarea.form-input::-webkit-resizer {
   .sidebar,
   article {
     width: auto;
+  }
+  .sidebar.active {
+    max-height: 860px;
   }
 
   article {

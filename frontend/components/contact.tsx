@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
 import {
-  IoArrowDown,
   IoCalendarOutline,
   IoLocationOutline,
   IoLogoFacebook,
@@ -13,19 +11,8 @@ import {
 import avatar from "../public/avatar.png";
 
 export default function Contact() {
-  const [showing, setShowing] = useState(false);
-  /* const [[width]] = useState([window.innerWidth]);
-
-  let avatarWidth = 80;
-
-  if (width > 1250) {
-    avatarWidth = 150;
-  } else if (width > 580) {
-    avatarWidth = 120;
-  } */
-
   return (
-    <aside className={`sidebar ${showing ? "active" : ""}`} data-sidebar>
+    <aside className={`sidebar active`} data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
@@ -50,17 +37,6 @@ export default function Contact() {
 
           <p className="title">Freelance Developer</p>
         </div>
-
-        <button
-          className="info_more-btn"
-          data-sidebar-btn
-          onClick={() => {
-            setShowing(!showing);
-          }}
-        >
-          <span>Show Contacts</span>
-          <IoArrowDown />
-        </button>
       </div>
 
       <div className="sidebar-info_more">

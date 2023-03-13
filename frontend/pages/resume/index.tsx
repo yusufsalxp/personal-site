@@ -1,3 +1,5 @@
+import { IoBookOutline } from "react-icons/io5";
+
 export default function Resume() {
   return (
     <article className="resume active" data-page="resume">
@@ -8,7 +10,7 @@ export default function Resume() {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            {/* <ion-icon name="book-outline"></ion-icon> */}
+            <IoBookOutline />
           </div>
 
           <h3 className="h3">Education</h3>
@@ -16,39 +18,12 @@ export default function Resume() {
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              University school of the arts
-            </h4>
+            <h4 className="h4 timeline-item-title">University of Karabuk</h4>
 
-            <span>2007 — 2008</span>
+            <span>2014 — 2018</span>
 
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">New york academy of art</h4>
-
-            <span>2006 — 2007</span>
-
-            <p className="timeline-text">
-              Ratione voluptatem sequi nesciunt, facere quisquams facere menda
-              ossimus, omnis voluptas assumenda est omnis..
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              High school of art and design
-            </h4>
-
-            <span>2002 — 2004</span>
-
-            <p className="timeline-text">
-              Duis aute irure dolor in reprehenderit in voluptate, quila
-              voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+              Graduated from Electric and Electronic engineering.
             </p>
           </li>
         </ol>
@@ -57,7 +32,7 @@ export default function Resume() {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            {/* <ion-icon name="book-outline"></ion-icon> */}
+            <IoBookOutline />
           </div>
 
           <h3 className="h3">Experience</h3>
@@ -65,35 +40,27 @@ export default function Resume() {
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Creative director</h4>
+            <h4 className="h4 timeline-item-title">
+              Freelance Sofware Developer
+            </h4>
 
-            <span>2015 — Present</span>
+            <span>2021 — Present</span>
 
             <p className="timeline-text">
-              Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit
-              atque corrupti, quos dolores et qvuas molestias exceptur.
+              I developed 3 mobile applications, 2 admin dashboards, 2 web sites
+              and worked as outsource for some companies.
             </p>
           </li>
 
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Art director</h4>
+            <h4 className="h4 timeline-item-title">Sofware Developer</h4>
 
-            <span>2013 — 2015</span>
-
-            <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Web designer</h4>
-
-            <span>2010 — 2013</span>
+            <span>2018 — 2021</span>
 
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
+              I worked as software developer in a startup called Endeksa for
+              roughly 3 years. We worked on so different projects in this
+              period.
             </p>
           </li>
         </ol>

@@ -1,9 +1,11 @@
-import { Poppins } from "next/font/google";
-
-const inter = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-});
+import Image from "next/image";
+import { IoCloseOutline } from "react-icons/io5";
+import avatar1 from "../public/avatar-1.png";
+import avatar2 from "../public/avatar-2.png";
+import avatar3 from "../public/avatar-3.png";
+import avatar4 from "../public/avatar-4.png";
+import mobileDevIcon from "../public/icon-app.svg";
+import webDevIcon from "../public/icon-dev.svg";
 
 export default function Home() {
   return (
@@ -15,18 +17,13 @@ export default function Home() {
 
         <section className="about-text">
           <p>
-            Im Creative Director and UI/UX Designer from Sydney, Australia,
-            working in web development and print media. I enjoy turning complex
-            problems into simple, beautiful and intuitive designs.
+            I&prime;m a freelance sofware developer from Ankara, Turkey, working
+            on web and mobile development. I enjoy solving different problems
+            and trying new things.
           </p>
-
           <p>
-            My job is to build your website so that it is functional and
-            user-friendly but at the same time attractive. Moreover, I add
-            personal touch to your product and make sure that is eye-catching
-            and easy to use. My aim is to bring across your message and identity
-            in the most creative way. I created web design for many famous brand
-            companies.
+            My job is to build your products so that it is easy to use and
+            maintainable.
           </p>
         </section>
 
@@ -36,75 +33,33 @@ export default function Home() {
           <ul className="service-list">
             <li className="service-item">
               <div className="service-icon-box">
-                <img
-                  src="./assets/images/icon-design.svg
-                "
-                  alt="design icon"
-                  width="40"
-                />
+                <Image src={webDevIcon} width={40} alt="Web development icon" />
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web design</h4>
+                <h4 className="h4 service-item-title">
+                  Fullstack Web Development
+                </h4>
 
                 <p className="service-item-text">
-                  The most modern and high-quality design made at a professional
-                  level.
+                  I can build your fullstack web applications by using react,
+                  nodejs, mongodb.
                 </p>
               </div>
             </li>
-
             <li className="service-item">
               <div className="service-icon-box">
-                <img
-                  src="./assets/images/icon-dev.svg"
-                  alt="Web development icon"
-                  width="40"
-                />
+                <Image src={mobileDevIcon} width={40} alt="mobile app icon" />
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web development</h4>
+                <h4 className="h4 service-item-title">
+                  Mobile App Development
+                </h4>
 
                 <p className="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-            </li>
-
-            <li className="service-item">
-              <div className="service-icon-box">
-                <img
-                  src="./assets/images/icon-app.svg"
-                  alt="mobile app icon"
-                  width="40"
-                />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Mobile apps</h4>
-
-                <p className="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-            </li>
-
-            <li className="service-item">
-              <div className="service-icon-box">
-                <img
-                  src="./assets/images/icon-photo.svg"
-                  alt="camera icon"
-                  width="40"
-                />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Photography</h4>
-
-                <p className="service-item-text">
-                  I make high-quality photos of any category at a professional
-                  level.
+                  I can build your mobile applications for IOS and Android by
+                  using Flutter.
                 </p>
               </div>
             </li>
@@ -118,11 +73,13 @@ export default function Home() {
             <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="60"
+                  <Image
+                    src={avatar1}
+                    width={60}
+                    height={60}
                     data-testimonials-avatar
+                    alt="Daniel lewis"
+                    className="testimonial-avatar-image"
                   />
                 </figure>
 
@@ -149,11 +106,13 @@ export default function Home() {
             <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
-                  <img
-                    src="./assets/images/avatar-2.png"
-                    alt="Jessica miller"
-                    width="60"
+                  <Image
+                    src={avatar2}
+                    width={60}
+                    height={60}
                     data-testimonials-avatar
+                    alt="Jessica miller"
+                    className="testimonial-avatar-image"
                   />
                 </figure>
 
@@ -180,11 +139,13 @@ export default function Home() {
             <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
-                  <img
-                    src="./assets/images/avatar-3.png"
-                    alt="Emily evans"
-                    width="60"
+                  <Image
+                    src={avatar3}
+                    width={60}
+                    height={60}
                     data-testimonials-avatar
+                    alt="Emily evans"
+                    className="testimonial-avatar-image"
                   />
                 </figure>
 
@@ -211,11 +172,13 @@ export default function Home() {
             <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
-                  <img
-                    src="./assets/images/avatar-4.png"
-                    alt="Henry william"
-                    width="60"
+                  <Image
+                    src={avatar4}
+                    width={60}
+                    height={60}
                     data-testimonials-avatar
+                    alt="Henry william"
+                    className="testimonial-avatar-image"
                   />
                 </figure>
 
@@ -246,20 +209,22 @@ export default function Home() {
 
           <section className="testimonials-modal">
             <button className="modal-close-btn" data-modal-close-btn>
-              {/* <CloseOutline /> */}
+              <IoCloseOutline />
             </button>
 
             <div className="modal-img-wrapper">
               <figure className="modal-avatar-box">
-                <img
-                  src="./assets/images/avatar-1.png"
-                  alt="Daniel lewis"
-                  width="80"
+                <Image
+                  src={avatar1}
+                  width={80}
+                  height={80}
                   data-modal-img
+                  alt="Daniel lewis"
+                  className="testimonial-avatar-image"
                 />
               </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              {/* 
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" /> */}
             </div>
 
             <div className="modal-content">
@@ -283,7 +248,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="clients">
+        {/*         <section className="clients">
           <h3 className="h3 clients-title">Clients</h3>
 
           <ul className="clients-list has-scrollbar">
@@ -323,7 +288,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </section>
+        </section> */}
       </article>
     </>
   );
