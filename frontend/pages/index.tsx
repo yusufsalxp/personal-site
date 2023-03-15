@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import nestjsIcon from "../public/NestJS.svg";
 import flutterIcon from "../public/flutter.png";
@@ -10,6 +11,9 @@ import typescriptIcon from "../public/typescript.png";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Yusuf ŞAL</title>
+      </Head>
       <article className="about  active" data-page="about">
         <header>
           <h2 className="h2 article-title">About me</h2>
