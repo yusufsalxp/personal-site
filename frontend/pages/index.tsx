@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { IoCloseOutline } from "react-icons/io5";
-import avatar1 from "../public/avatar-1.png";
-import avatar2 from "../public/avatar-2.png";
-import avatar3 from "../public/avatar-3.png";
-import avatar4 from "../public/avatar-4.png";
+import nestjsIcon from "../public/NestJS.svg";
+import flutterIcon from "../public/flutter.png";
 import mobileDevIcon from "../public/icon-app.svg";
 import webDevIcon from "../public/icon-dev.svg";
+import nextjsIcon from "../public/nextjs.svg";
+import reactIcon from "../public/react.png";
+import typescriptIcon from "../public/typescript.png";
 
 export default function Home() {
   return (
@@ -33,17 +33,46 @@ export default function Home() {
           <ul className="service-list">
             <li className="service-item">
               <div className="service-icon-box">
-                <Image src={webDevIcon} width={40} alt="Web development icon" />
+                <Image
+                  src={webDevIcon}
+                  width={40}
+                  alt="Frontend development icon"
+                />
               </div>
 
               <div className="service-content-box">
                 <h4 className="h4 service-item-title">
-                  Fullstack Web Development
+                  Frontend Web Development
                 </h4>
 
                 <p className="service-item-text">
-                  I can build your fullstack web applications by using react,
-                  nodejs, mongodb.
+                  I can build your frontend web applications by using react,
+                  nodejs, typescript, nextjs and modern web development
+                  principles.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image
+                  src={webDevIcon}
+                  width={40}
+                  style={{
+                    color: "transparent",
+                  }}
+                  alt="Backend development icon"
+                />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">
+                  Backend Web Development
+                </h4>
+
+                <p className="service-item-text">
+                  I can build your backend web applications by using nodejs,
+                  typescript nestjs, mongodb, postgresql and modern web
+                  architecture.
                 </p>
               </div>
             </li>
@@ -66,6 +95,84 @@ export default function Home() {
           </ul>
         </section>
 
+        <section className="service">
+          <h3 className="h3 service-title">Tech Stack</h3>
+
+          <ul className="service-list">
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image src={flutterIcon} width={40} alt="Flutter" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Flutter</h4>
+
+                <p className="service-item-text">
+                  I can create your Android and IOS applications with high
+                  performance in Flutter.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image src={nestjsIcon} width={40} alt="NestJS" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">NestJS</h4>
+
+                <p className="service-item-text">
+                  I can build your backend application with NestJS and
+                  Typescript to create a maintainable and scalable backend
+                  projects.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image src={reactIcon} width={40} alt="React" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">ReactJS</h4>
+
+                <p className="service-item-text">
+                  I can create your frontend applications with ReactJS to create
+                  interactive and data driven applications.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image src={nextjsIcon} width={40} alt="NextJS" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">NextJS</h4>
+
+                <p className="service-item-text">
+                  I can build your react application with NextJS and Typescript
+                  to create SEO first web pages.
+                </p>
+              </div>
+            </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <Image src={typescriptIcon} width={40} alt="Typescript" />
+              </div>
+
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Typescript</h4>
+
+                <p className="service-item-text">
+                  I can create your javascript application with typescript to
+                  create maintainable and long term projects.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        {/* 
         <section className="testimonials">
           <h3 className="h3 testimonials-title">Testimonials</h3>
 
@@ -223,8 +330,9 @@ export default function Home() {
                   className="testimonial-avatar-image"
                 />
               </figure>
-              {/* 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" /> */}
+              {
+                // <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              }
             </div>
 
             <div className="modal-content">
@@ -247,7 +355,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-
+ */}
         {/*         <section className="clients">
           <h3 className="h3 clients-title">Clients</h3>
 

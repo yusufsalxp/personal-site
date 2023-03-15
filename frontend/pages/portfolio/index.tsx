@@ -1,3 +1,5 @@
+import { IoChevronDown } from "react-icons/io5";
+
 export default function Portfolio() {
   return (
     <article className="portfolio active" data-page="portfolio">
@@ -33,6 +35,7 @@ export default function Portfolio() {
             </div>
 
             <div className="select-icon">
+              <IoChevronDown />
               {/* <ion-icon name="chevron-down"></ion-icon> */}
             </div>
           </button>
