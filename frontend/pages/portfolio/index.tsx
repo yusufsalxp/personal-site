@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
-import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
+import {
+  IoLogoAppleAppstore,
+  IoLogoGithub,
+  IoLogoGooglePlaystore,
+} from "react-icons/io5";
 import personalPreview from "../../public/personal.png";
 import recipePreview from "../../public/recipe.png";
 import yogaPreview from "../../public/yoga.png";
@@ -88,6 +92,9 @@ export default function Portfolio() {
                   <div className="project-item-icon-box">
                     <a href="https://www.yusufsal.com/">
                       <FiArrowUpRight />
+                    </a>
+                    <a href="https://github.com/JosephShall/personal-site">
+                      <IoLogoGithub />
                     </a>
                   </div>
 

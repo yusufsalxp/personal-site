@@ -2,8 +2,7 @@ import Image from "next/image";
 import {
   IoCalendarOutline,
   IoLocationOutline,
-  IoLogoFacebook,
-  IoLogoInstagram,
+  IoLogoGithub,
   IoLogoTwitter,
   IoMailOutline,
   IoPhonePortraitOutline,
@@ -100,20 +99,14 @@ export default function Contact() {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
-              <IoLogoFacebook />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://twitter.com/JosephShalll" className="social-link">
               <IoLogoTwitter />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
-              <IoLogoInstagram />
+            <a href="https://github.com/JosephShall" className="social-link">
+              <IoLogoGithub />
             </a>
           </li>
         </ul>
