@@ -90,11 +90,11 @@ export default function Portfolio() {
               <div>
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    <a href="https://www.yusufsal.com/">
-                      <FiArrowUpRight />
-                    </a>
                     <a href="https://github.com/JosephShall/personal-site">
                       <IoLogoGithub />
+                    </a>
+                    <a href="https://www.yusufsal.com/">
+                      <FiArrowUpRight />
                     </a>
                   </div>
 
