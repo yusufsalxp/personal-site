@@ -7,6 +7,7 @@ import {
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
+  IoLogoStackoverflow,
   IoLogoTwitter,
   IoMailOutline,
 } from "react-icons/io5";
@@ -122,6 +123,14 @@ export default function Contact() {
               className="social-link"
             >
               <IoLogoCodepen />
+            </a>
+          </li>
+          <li className="social-item">
+            <a
+              href="https://stackoverflow.com/users/17674760/yusufsalxp"
+              className="social-link"
+            >
+              <IoLogoStackoverflow />
             </a>
           </li>
           <li className="social-item">
