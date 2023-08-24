@@ -3,9 +3,10 @@ import {
   IoCalendarOutline,
   IoLocationOutline,
   IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoLinkedin,
   IoLogoTwitter,
   IoMailOutline,
-  IoPhonePortraitOutline,
 } from "react-icons/io5";
 import avatar from "../public/avatar.png";
 
@@ -51,21 +52,7 @@ export default function Contact() {
               <p className="contact-title">Email</p>
 
               <a href="mailto:contact@yusufsal.com" className="contact-link">
-                contact@yusufsal.com
-              </a>
-            </div>
-          </li>
-
-          <li className="contact-item">
-            <div className="icon-box">
-              <IoPhonePortraitOutline />
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Phone</p>
-
-              <a href="tel:+905075971176" className="contact-link">
-                +90 (507) 597-1176
+                me@yusufsal.com
               </a>
             </div>
           </li>
@@ -99,14 +86,26 @@ export default function Contact() {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="https://twitter.com/JosephShalll" className="social-link">
+            <a
+              href="https://linkedin.com/in/yusufsalxp"
+              className="social-link"
+            >
+              <IoLogoLinkedin />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="https://github.com/yusufsalxp" className="social-link">
+              <IoLogoGithub />
+            </a>
+          </li>
+          <li className="social-item">
+            <a href="https://twitter.com/yusufsalxp" className="social-link">
               <IoLogoTwitter />
             </a>
           </li>
-
           <li className="social-item">
-            <a href="https://github.com/JosephShall" className="social-link">
-              <IoLogoGithub />
+            <a href="https://instagram.com/yusufsalxp" className="social-link">
+              <IoLogoInstagram />
             </a>
           </li>
         </ul>
