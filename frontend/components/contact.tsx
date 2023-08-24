@@ -94,7 +94,7 @@ export default function Contact() {
                 href="https://rxresu.me/tr/yusuf.sal.1996/cv-english"
                 className="contact-link"
               >
-                Resume
+                More Detailed Resume
               </a>
             </div>
           </li>
