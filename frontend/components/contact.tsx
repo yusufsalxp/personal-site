@@ -1,7 +1,9 @@
 import Image from "next/image";
 import {
+  IoArchive,
   IoCalendarOutline,
   IoLocationOutline,
+  IoLogoCodepen,
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoLinkedin,
@@ -51,7 +53,7 @@ export default function Contact() {
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:contact@yusufsal.com" className="contact-link">
+              <a href="mailto:me@yusufsal.com" className="contact-link">
                 me@yusufsal.com
               </a>
             </div>
@@ -80,6 +82,22 @@ export default function Contact() {
               <address>Ankara, Turkey</address>
             </div>
           </li>
+          <li className="contact-item">
+            <div className="icon-box">
+              <IoArchive />
+            </div>
+
+            <div className="contact-info">
+              <p className="contact-title">Resume</p>
+
+              <a
+                href="https://rxresu.me/tr/yusuf.sal.1996/cv-english"
+                className="contact-link"
+              >
+                Resume
+              </a>
+            </div>
+          </li>
         </ul>
 
         <div className="separator"></div>
@@ -96,6 +114,14 @@ export default function Contact() {
           <li className="social-item">
             <a href="https://github.com/yusufsalxp" className="social-link">
               <IoLogoGithub />
+            </a>
+          </li>
+          <li className="social-item">
+            <a
+              href="https://app.codesignal.com/profile/yusufsalxp"
+              className="social-link"
+            >
+              <IoLogoCodepen />
             </a>
           </li>
           <li className="social-item">

@@ -52,8 +52,8 @@ export default function Resume() {
               <span>2021 — Present</span>
 
               <p className="timeline-text">
-                I developed 3 mobile applications, 2 admin dashboards, 2 web
-                sites and worked as outsource for some companies.
+                Developed 3 mobile applications, 2 admin dashboards, 2 web sites
+                and worked as outsource for some companies.
               </p>
             </li>
 
@@ -63,7 +63,7 @@ export default function Resume() {
               <span>2018 — 2021</span>
 
               <p className="timeline-text">
-                I worked as software developer in a startup called Endeksa for
+                Worked as software developer in a startup called Endeksa for
                 roughly 3 years. We worked on so different projects in this
                 period.
               </p>
