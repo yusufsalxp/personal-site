@@ -1,17 +1,54 @@
 import Image from "next/image";
-import {
-  IoArchive,
-  IoCalendarOutline,
-  IoLocationOutline,
-  IoLogoCodepen,
-  IoLogoGithub,
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoStackoverflow,
-  IoLogoTwitter,
-  IoMailOutline,
-} from "react-icons/io5";
+
+import * as IO5Icons from "react-icons/io5";
 import avatar from "../public/avatar.png";
+
+function Seperator() {
+  return <div className="separator"></div>;
+}
+
+const CustomIO5Icon = ({ name }: { name: string }) => {
+  const FaIcon = IO5Icons[name];
+  if (!FaIcon) return <p>Icon not found!</p>;
+
+  return <FaIcon />;
+};
+
+function SocialItem({ icon, href }: { icon: string; href: string }) {
+  return (
+    <li className="social-item">
+      <a href={href} className="social-link">
+        <CustomIO5Icon name={icon} />
+      </a>
+    </li>
+  );
+}
+
+function ContactItem({
+  icon,
+  title,
+  text,
+  href,
+}: {
+  icon: string;
+  title: string;
+  text: string;
+  href?: string;
+}) {
+  return (
+    <li className="contact-item">
+      <div className="icon-box">{<CustomIO5Icon name={icon} />}</div>
+
+      <div className="contact-info">
+        <p className="contact-title">{title}</p>
+
+        <a href={href} className="contact-link">
+          {text}
+        </a>
+      </div>
+    </li>
+  );
+}
 
 export default function Contact() {
   return (
@@ -43,106 +80,59 @@ export default function Contact() {
       </div>
 
       <div className="sidebar-info_more">
-        <div className="separator"></div>
-
+        <Seperator />
         <ul className="contacts-list">
-          <li className="contact-item">
-            <div className="icon-box">
-              <IoMailOutline />
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Email</p>
-
-              <a href="mailto:me@yusufsal.com" className="contact-link">
-                me@yusufsal.com
-              </a>
-            </div>
-          </li>
-
-          <li className="contact-item">
-            <div className="icon-box">
-              <IoCalendarOutline />
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Birthday</p>
-
-              <time dateTime="1982-06-23">February 16, 1996</time>
-            </div>
-          </li>
-
-          <li className="contact-item">
-            <div className="icon-box">
-              <IoLocationOutline />
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Location</p>
-
-              <address>Ankara, Turkey</address>
-            </div>
-          </li>
-          <li className="contact-item">
-            <div className="icon-box">
-              <IoArchive />
-            </div>
-
-            <div className="contact-info">
-              <p className="contact-title">Resume</p>
-
-              <a
-                href="https://rxresu.me/tr/yusuf.sal.1996/cv-english"
-                className="contact-link"
-              >
-                More Detailed Resume
-              </a>
-            </div>
-          </li>
+          <ContactItem
+            icon="IoMailOutline"
+            title="Email"
+            text="me@yusufsal.com"
+            href="mailto:me@yusufsal.com"
+          />
+          <ContactItem
+            icon="IoCalendarOutline"
+            title="Birthday"
+            text="February 16, 1996"
+          />
+          <ContactItem
+            icon="IoLocationOutline"
+            title="Location"
+            text="Ankara, Turkey"
+          />
+          <ContactItem
+            icon="IoArchive"
+            title="Resume"
+            text="More Detailed Resume"
+            href="https://rxresu.me/tr/yusuf.sal.1996/cv-english"
+          />
         </ul>
 
-        <div className="separator"></div>
+        <Seperator />
 
         <ul className="social-list">
-          <li className="social-item">
-            <a
-              href="https://linkedin.com/in/yusufsalxp"
-              className="social-link"
-            >
-              <IoLogoLinkedin />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://github.com/yusufsalxp" className="social-link">
-              <IoLogoGithub />
-            </a>
-          </li>
-          <li className="social-item">
-            <a
-              href="https://app.codesignal.com/profile/yusufsalxp"
-              className="social-link"
-            >
-              <IoLogoCodepen />
-            </a>
-          </li>
-          <li className="social-item">
-            <a
-              href="https://stackoverflow.com/users/17674760/yusufsalxp"
-              className="social-link"
-            >
-              <IoLogoStackoverflow />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://twitter.com/yusufsalxp" className="social-link">
-              <IoLogoTwitter />
-            </a>
-          </li>
-          <li className="social-item">
-            <a href="https://instagram.com/yusufsalxp" className="social-link">
-              <IoLogoInstagram />
-            </a>
-          </li>
+          <SocialItem
+            href="https://linkedin.com/in/yusufsalxp"
+            icon="IoLogoLinkedin"
+          />
+          <SocialItem
+            href="https://github.com/yusufsalxp"
+            icon="IoLogoGithub"
+          />
+          <SocialItem
+            href="https://app.codesignal.com/profile/yusufsalxp"
+            icon="IoLogoCodepen"
+          />
+          <SocialItem
+            href="https://stackoverflow.com/users/17674760/yusufsalxp"
+            icon="IoLogoStackoverflow"
+          />
+          <SocialItem
+            href="https://twitter.com/yusufsalxp"
+            icon="IoLogoTwitter"
+          />
+          <SocialItem
+            href="https://instagram.com/yusufsalxp"
+            icon="IoLogoInstagram"
+          />
         </ul>
       </div>
     </aside>
