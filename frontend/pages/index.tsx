@@ -8,6 +8,30 @@ import nextjsIcon from "../public/nextjs.svg";
 import reactIcon from "../public/react.png";
 import typescriptIcon from "../public/typescript.png";
 
+function CardItem({
+  image,
+  title,
+  content,
+}: {
+  image: any;
+  title: string;
+  content: string;
+}) {
+  return (
+    <li className="service-item">
+      <div className="service-icon-box">
+        <Image src={image} width={40} alt={title} />
+      </div>
+
+      <div className="service-content-box">
+        <h4 className="h4 service-item-title">{title}</h4>
+
+        <p className="service-item-text">{content}</p>
+      </div>
+    </li>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -35,65 +59,24 @@ export default function Home() {
           <h3 className="h3 service-title">What im doing</h3>
 
           <ul className="service-list">
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image
-                  src={webDevIcon}
-                  width={40}
-                  alt="Frontend development icon"
-                />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">
-                  Frontend Web Development
-                </h4>
-
-                <p className="service-item-text">
-                  Building frontend web applications by using React, Nodejs,
-                  Typescript, Nextjs and modern web development principles.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image
-                  src={webDevIcon}
-                  width={40}
-                  style={{
-                    color: "transparent",
-                  }}
-                  alt="Backend development icon"
-                />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">
-                  Backend Web Development
-                </h4>
-
-                <p className="service-item-text">
-                  Building backend web applications by using Nodejs, Typescript
-                  Nestjs, Mongodb, Postgresql and modern web architecture.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={mobileDevIcon} width={40} alt="mobile app icon" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">
-                  Mobile App Development
-                </h4>
-
-                <p className="service-item-text">
-                  Building mobile applications for IOS and Android by using
-                  Flutter.
-                </p>
-              </div>
-            </li>
+            <CardItem
+              title="Frontend Web Development"
+              content="Building frontend web applications by using React, Nodejs, Typescript,
+              Nextjs and modern web development principles."
+              image={webDevIcon}
+            />
+            <CardItem
+              title="Backend Web Development"
+              content="Building backend web applications by using Nodejs, Typescript
+              Nestjs, Mongodb, Postgresql and modern web architecture."
+              image={webDevIcon}
+            />
+            <CardItem
+              title="Mobile App Development"
+              content="Building mobile applications for IOS and Android by using
+              Flutter."
+              image={mobileDevIcon}
+            />
           </ul>
         </section>
 
@@ -101,76 +84,36 @@ export default function Home() {
           <h3 className="h3 service-title">Tech Stack</h3>
 
           <ul className="service-list">
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={flutterIcon} width={40} alt="Flutter" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Flutter</h4>
-
-                <p className="service-item-text">
-                  Creating Android and IOS applications with high performance in
-                  Flutter.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={nestjsIcon} width={40} alt="NestJS" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">NestJS</h4>
-
-                <p className="service-item-text">
-                  Creating backend application with NestJS and Typescript to
-                  have a maintainable and scalable backend projects.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={reactIcon} width={40} alt="React" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">ReactJS</h4>
-
-                <p className="service-item-text">
-                  Creating frontend applications with ReactJS to have
-                  interactive and data driven applications.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={nextjsIcon} width={40} alt="NextJS" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">NextJS</h4>
-
-                <p className="service-item-text">
-                  Creating react application with NextJS and Typescript to have
-                  SEO first web pages.
-                </p>
-              </div>
-            </li>
-            <li className="service-item">
-              <div className="service-icon-box">
-                <Image src={typescriptIcon} width={40} alt="Typescript" />
-              </div>
-
-              <div className="service-content-box">
-                <h4 className="h4 service-item-title">Typescript</h4>
-
-                <p className="service-item-text">
-                  Creating javascript application with typescript to have more
-                  maintainable and long term projects.
-                </p>
-              </div>
-            </li>
+            <CardItem
+              title="Flutter"
+              content="Creating Android and IOS applications with high performance in
+              Flutter."
+              image={flutterIcon}
+            />
+            <CardItem
+              title="NestJS"
+              content="Creating backend application with NestJS and Typescript to
+              have a maintainable and scalable backend projects."
+              image={nestjsIcon}
+            />
+            <CardItem
+              title="ReactJS"
+              content="Creating frontend applications with ReactJS to have
+              interactive and data driven applications."
+              image={reactIcon}
+            />
+            <CardItem
+              title="NextJS"
+              content="Creating react application with NextJS and Typescript to have
+              SEO first web pages."
+              image={nextjsIcon}
+            />
+            <CardItem
+              title="Typescript"
+              content="Creating javascript application with typescript to have more
+              maintainable and long term projects."
+              image={typescriptIcon}
+            />
           </ul>
         </section>
         {/* 
