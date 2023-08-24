@@ -21,9 +21,9 @@ export default function Home() {
 
         <section className="about-text">
           <p>
-            I&prime;m a freelance sofware developer from Ankara, Turkey, working
-            on web and mobile development. I enjoy solving different problems
-            and trying new things.
+            A freelance sofware developer from Ankara, Turkey, working on web
+            and mobile development. Enjoy solving different problems and trying
+            new things.
           </p>
           <p>
             My job is to build your products so that it is easy to use and
@@ -50,9 +50,8 @@ export default function Home() {
                 </h4>
 
                 <p className="service-item-text">
-                  I can build your frontend web applications by using react,
-                  nodejs, typescript, nextjs and modern web development
-                  principles.
+                  Building frontend web applications by using React, Nodejs,
+                  Typescript, Nextjs and modern web development principles.
                 </p>
               </div>
             </li>
@@ -74,9 +73,8 @@ export default function Home() {
                 </h4>
 
                 <p className="service-item-text">
-                  I can build your backend web applications by using nodejs,
-                  typescript nestjs, mongodb, postgresql and modern web
-                  architecture.
+                  Building backend web applications by using Nodejs, Typescript
+                  Nestjs, Mongodb, Postgresql and modern web architecture.
                 </p>
               </div>
             </li>
@@ -91,8 +89,8 @@ export default function Home() {
                 </h4>
 
                 <p className="service-item-text">
-                  I can build your mobile applications for IOS and Android by
-                  using Flutter.
+                  Building mobile applications for IOS and Android by using
+                  Flutter.
                 </p>
               </div>
             </li>
@@ -112,8 +110,8 @@ export default function Home() {
                 <h4 className="h4 service-item-title">Flutter</h4>
 
                 <p className="service-item-text">
-                  I can create your Android and IOS applications with high
-                  performance in Flutter.
+                  Creating Android and IOS applications with high performance in
+                  Flutter.
                 </p>
               </div>
             </li>
@@ -126,9 +124,8 @@ export default function Home() {
                 <h4 className="h4 service-item-title">NestJS</h4>
 
                 <p className="service-item-text">
-                  I can build your backend application with NestJS and
-                  Typescript to create a maintainable and scalable backend
-                  projects.
+                  Creating backend application with NestJS and Typescript to
+                  have a maintainable and scalable backend projects.
                 </p>
               </div>
             </li>
@@ -141,7 +138,7 @@ export default function Home() {
                 <h4 className="h4 service-item-title">ReactJS</h4>
 
                 <p className="service-item-text">
-                  I can create your frontend applications with ReactJS to create
+                  Creating frontend applications with ReactJS to have
                   interactive and data driven applications.
                 </p>
               </div>
@@ -155,8 +152,8 @@ export default function Home() {
                 <h4 className="h4 service-item-title">NextJS</h4>
 
                 <p className="service-item-text">
-                  I can build your react application with NextJS and Typescript
-                  to create SEO first web pages.
+                  Creating react application with NextJS and Typescript to have
+                  SEO first web pages.
                 </p>
               </div>
             </li>
@@ -169,8 +166,8 @@ export default function Home() {
                 <h4 className="h4 service-item-title">Typescript</h4>
 
                 <p className="service-item-text">
-                  I can create your javascript application with typescript to
-                  create maintainable and long term projects.
+                  Creating javascript application with typescript to have more
+                  maintainable and long term projects.
                 </p>
               </div>
             </li>

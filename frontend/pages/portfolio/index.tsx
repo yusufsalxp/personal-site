@@ -93,7 +93,7 @@ export default function Portfolio() {
                     <a href="https://github.com/JosephShall/personal-site">
                       <IoLogoGithub />
                     </a>
-                    <a href="https://www.yusufsal.com/">
+                    <a href="https://yusufsal.com/">
                       <FiArrowUpRight />
                     </a>
                   </div>
