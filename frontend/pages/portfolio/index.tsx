@@ -25,6 +25,7 @@ function ProjectItem({
 }) {
   return (
     <li
+      key={title}
       className="project-item  active"
       data-filter-item
       data-category="application"
@@ -33,7 +34,7 @@ function ProjectItem({
         <figure className="project-img">
           <div className="project-item-icon-box">
             {links.map(({ icon, href }) => (
-              <a href={href}>
+              <a key={href} href={href}>
                 <CustomIO5Icon name={icon} />
               </a>
             ))}
