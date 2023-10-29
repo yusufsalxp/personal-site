@@ -1,9 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import * as IO5Icons from "react-icons/io5";
-import personalPreview from "../../public/personal.png";
-import recipePreview from "../../public/recipe.png";
-import yogaPreview from "../../public/yoga.png";
 
 const CustomIO5Icon = ({ name }: { name: string }) => {
   const FaIcon = IO5Icons[name];
@@ -40,7 +37,13 @@ function ProjectItem({
             ))}
           </div>
 
-          <Image src={image} alt={title} loading="lazy" />
+          <Image
+            src={image}
+            alt={title}
+            loading="lazy"
+            width={260}
+            height={180}
+          />
         </figure>
 
         <h3 className="project-title">{title}</h3>
@@ -67,7 +70,7 @@ export default function Portfolio() {
             <ProjectItem
               title="Sahaja Meditation & Yoga"
               category="Mobile Application"
-              image={yogaPreview}
+              image={"/yoga.png"}
               links={[
                 {
                   href: "https://play.google.com/store/apps/details?id=com.sahajayogameditasyon.sahajayoga&hl=en&gl=US",
@@ -86,7 +89,7 @@ export default function Portfolio() {
             <ProjectItem
               title="Shri Mataji Nirmala Devi's Recipes"
               category="Mobile Application"
-              image={recipePreview}
+              image={"/recipe.png"}
               links={[
                 {
                   href: "https://play.google.com/store/apps/details?id=com.shirimatajinirmaladevi.recipes",
@@ -101,7 +104,7 @@ export default function Portfolio() {
             <ProjectItem
               title="Yusuf ŞAL Personal Site"
               category="Web Page"
-              image={personalPreview}
+              image={"/personal.png"}
               links={[
                 {
                   href: "https://github.com/JosephShall/personal-site",
