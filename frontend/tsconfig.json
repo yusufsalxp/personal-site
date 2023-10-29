@@ -15,7 +15,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
+    "types": ["node", "@types/debug"],
     "paths": {
       "@/*": ["./*"]
     }

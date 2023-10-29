@@ -5,7 +5,7 @@ const MenuItems = [
   { text: "About", href: "/" },
   { text: "Resume", href: "/resume" },
   { text: "Portfolio", href: "/portfolio" },
-  //{ text: "Blog", href: "/blog" },
+  { text: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
@@ -15,7 +15,10 @@ export default function Navbar() {
     <nav className="navbar">
       <ul className="navbar-list">
         {MenuItems.map(({ text, href }) => {
-          let isActive = router.asPath == href;
+          let isActive =
+            href == "/"
+              ? router.asPath == href
+              : router.asPath.startsWith(href);
           return (
             <>
               <li className={`navbar-item}`}>
