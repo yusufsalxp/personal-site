@@ -58,7 +58,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Yusuf ŞAL Porftolio</title>
+        <title>Yusuf ŞAL | Porftolio</title>
       </Head>
       <article className="portfolio active" data-page="portfolio">
         <header>

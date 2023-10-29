@@ -24,6 +24,15 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "content/posts",
+        ui: {
+          router: ({ document }) => `/blog/${document._sys.filename}`,
+          beforeSubmit: async ({ values }) => {
+            return {
+              ...values,
+              lastUpdated: new Date().toISOString(),
+            };
+          },
+        },
         fields: [
           {
             type: "string",
@@ -33,16 +42,43 @@ export default defineConfig({
             required: true,
           },
           {
+            name: "lastUpdated",
+            type: "datetime",
+            ui: {
+              component: "hidden",
+            },
+          },
+          {
+            type: "string",
+            label: "Topic",
+            name: "topic",
+            options: [
+              "programming",
+              "javascript",
+              "typescript",
+              "react",
+              "nextjs",
+              "c#",
+              "asp.net",
+              "dotnet",
+              "dotnetcore",
+              "postgresql",
+              "sql",
+              "database",
+              "docker",
+              "mongodb",
+              "git",
+              "misc",
+            ],
+            list: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/blog/${document._sys.filename}`,
-        },
       },
     ],
   },

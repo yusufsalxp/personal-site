@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>Yusuf ŞAL Resume</title>
+        <title>Yusuf ŞAL | Resume</title>
       </Head>
       <article className="resume active" data-page="resume">
         <header>

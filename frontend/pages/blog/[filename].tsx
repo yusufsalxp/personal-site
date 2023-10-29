@@ -1,6 +1,3 @@
-// THIS FILE HAS BEEN GENERATED WITH THE TINA CLI.
-// This is a demo file once you have tina setup feel free to delete this file
-
 import Head from "next/head";
 import { useTina } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
@@ -19,7 +16,7 @@ const BlogPage = (props) => {
         <title>Yusuf ŞAL | {data.post.title}</title>
       </Head>
 
-      <article className="blog  active" data-page="blog">
+      <article className="blog active" data-page="blog">
         <header>
           <h2 className="h2 article-title"> {data.post.title}</h2>
         </header>
